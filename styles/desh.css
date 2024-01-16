@@ -2,57 +2,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 
 /* shared styles */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Mulish', sans-serif;
 }
 
-.primary-heading{
+.primary-heading {
     font-weight: 800px;
     font-size: 2.4rem;
 }
 
-.primary-color{
+.primary-color {
     color: #FF5400;
 }
 
-.primary-font-weight{
+.primary-font-weight {
     font-weight: 400;
     color: #5A5A5D;
+}
+
+.primary-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
 }
 
 /* header styles */
 
 /* navbar styles */
 
-nav{
+header {
+    margin: 40px 80px;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
 }
 
-nav .left-portion{
+nav .left-portion {
     display: flex;
     gap: 1rem;
 }
 
-.nav-heading{
+.nav-heading {
     font-size: 2.0rem;
 }
 
-nav > ul{
+nav>ul {
     display: flex;
     gap: 44px;
 }
 
-nav li{
+nav li {
     list-style: none;
 }
 
-#nav-li{
+#nav-li {
     font-weight: 700;
+}
+
+
+/* banner styles */
+.banner {
+    margin-top: 50px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    text-align: center;
+    padding: 90px 150px;
+}
+
+.banner-heading {
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.banner-form {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.banner-field{
+    width: 20%;
+}
+
+.banner-form input {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 10px;
+    text-align: left;
+    border: 0;
+    width: 90%;
+}
+
+.banner-form button{
+    width: 100%;
 }
 
 
@@ -62,20 +125,67 @@ nav li{
 /* Responsive style */
 
 /* For Phone Screen */
-@media  screen and (max-width:600px) {
-    .right-portion-ul{
+@media screen and (max-width:600px) {
+    .right-portion-ul {
         display: none;
     }
-    nav{
-        padding: 20px 20px;
+
+    header {
+        margin: 20px 20px;
     }
-    .primary-heading{
-        font-size: 1.2rem;
+
+    .primary-heading {
+        font-size: 1.4rem;
     }
-    nav .left-portion{
+
+    nav .left-portion {
         gap: 10px;
     }
-    .left-portion > img{
+
+    .left-portion>img {
+        height: 1.8rem;
+        width: auto;
+    }
+    .banner{
+        padding: 24px 32px;
+    }
+    .banner-form{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    .banner-field{
+        width: 95%;
+    }
+    .banner-form input {
+        padding-left: 5px;
+        width: 95%;
+    }
+    .banner-form button {
+        width: 99%;
+    }
+}
+
+/* For Tablet */
+@media screen and (min-width:600px) and (max-width:992px) {
+    .right-portion-ul {
+        display: none;
+    }
+
+    header {
+        margin: 30px 90px;
+    }
+
+    .primary-heading {
+        font-size: 1.2rem;
+    }
+
+    nav .left-portion {
+        gap: 10px;
+    }
+
+    .left-portion>img {
         height: 1.8rem;
         width: auto;
     }
@@ -83,8 +193,8 @@ nav li{
 
 
 /* for desktop or laptop */
-@media  screen and (min-width:600px) {
-    .right-portion-img{
+@media screen and (min-width:992px) {
+    .right-portion-img {
         display: none;
     }
 }
