@@ -119,6 +119,38 @@ nav li {
 }
 
 
+/* main */
+main {
+    margin: 40px 80px;
+}
+
+/*Our Popular Tour styles*/
+.popular-tour{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.popular-content {
+    flex: 1;
+}
+
+.popular-img {
+    width: 100%;
+}
+
+.popular-list {
+    padding: 20px 0px 20px 30px;
+}
+
+.popular-content-des{
+    margin-top: 24px;
+}
+
+.popular-btn {
+    margin-top: 20px;
+}
 
 
 
@@ -130,7 +162,7 @@ nav li {
         display: none;
     }
 
-    header {
+    header , main {
         margin: 20px 20px;
     }
 
@@ -165,6 +197,10 @@ nav li {
     .banner-form button {
         width: 99%;
     }
+    .popular-tour{
+        flex-direction: column;
+    }
+
 }
 
 /* For Tablet */
