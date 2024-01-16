@@ -285,13 +285,142 @@ main {
     grid-area:box3;
 }
 
-
-
 .choose-us-content2 {
     display: grid;
     /* grid-template-columns: repeat(2 , 1fr); */
     grid-template-areas: "box1 box1 box2 box2" "box3 box3 box3 box3";
     gap: 15px;
+}
+
+
+/* Newsletter style */
+.newsletter {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.newsletter-content1 {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-container {
+    padding: 30px;
+}
+
+.newsletter-title {
+    color: #131318;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.newsletter-des {
+    color: #5A5A5D;
+    margin-bottom: 15px;
+}
+
+.newsletter-container hr {
+    opacity: 50%;
+    margin-bottom: 15px;
+}
+
+.newsletter-container input {
+    width: 90%;
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 10px;
+}
+
+.newsletter-container button {
+    width: 98%;
+}
+
+.newsletter-content2>img {
+    width: 100%;
+}
+
+.newsletter-img{
+    position: relative;
+}
+
+.newsletter-discount {
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    right: 2%;
+    bottom: -(10%);
+}
+
+/* Client Review Section */
+
+.client-review{
+    margin-top: 80px;
+}
+
+.client-review-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.client-review-box{
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.client-img{
+    width: 100%;
+    object-fit: cover;
+    height: 70%;
+    border-radius: 16px;
+}
+
+
+
+/* Footer styles */
+footer{
+    margin-top: 80px;
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 80px 160px;
+}
+
+.footer-heading-part-title{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-des{
+    margin-top: 16px;
+}
+
+.footer-icon-part{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-icon{
+    margin-right: 25px;
+    color: #131318;
+}
+
+.line{
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 16px;
 }
 
 
@@ -316,7 +445,7 @@ main {
         gap: 10px;
     }
 
-    .left-portion>img {
+    .left-portion , .footer-heading-part-title>img {
         height: 1.8rem;
         width: auto;
     }
@@ -371,14 +500,29 @@ main {
         "box3 box3";
     }
 
-    
+    .client-review-container{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    footer{
+        padding: 20px 40px;
+    }
+
+    .footer-icon{
+        margin-right: 10px;
+    }
 
 }
 
 
 
 /* For Tablet */
-@media screen and (min-width:600px) and (max-width:992px) {
+@media screen and (min-width:601px) and (max-width:991px) {
     .right-portion-ul {
         display: none;
     }
