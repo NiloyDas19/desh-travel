@@ -101,7 +101,7 @@ nav li {
     padding: 10px;
 }
 
-.banner-field{
+.banner-field {
     width: 20%;
 }
 
@@ -114,7 +114,7 @@ nav li {
     width: 90%;
 }
 
-.banner-form button{
+.banner-form button {
     width: 100%;
 }
 
@@ -125,7 +125,7 @@ main {
 }
 
 /*Our Popular Tour styles*/
-.popular-tour{
+.popular-tour {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -144,7 +144,7 @@ main {
     padding: 20px 0px 20px 30px;
 }
 
-.popular-content-des{
+.popular-content-des {
     margin-top: 24px;
 }
 
@@ -152,6 +152,147 @@ main {
     margin-top: 20px;
 }
 
+
+/* Choose Your Destination Styles*/
+.destination {
+    margin-top: 50px;
+}
+
+.destination-content1 {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.destination-des {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.destination-content2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.destination-content2 div {
+    border-radius: 16px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.destination-img-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.destination-img1 {
+    grid-area: img1;
+}
+
+.destination-img2 {
+    grid-area: img2;
+}
+
+.destination-img3 {
+    grid-area: img3;
+}
+
+.destination-img4 {
+    grid-area: img4;
+}
+
+.destination-img5 {
+    grid-area: img5;
+}
+
+.destination-img6 {
+    grid-area: img6;
+}
+
+.destination-img7 {
+    grid-area: img7;
+}
+
+.destination-content2 {
+    display: grid;
+    grid-template-areas:
+        "img1 img1 img1 img1 img1 img2 img2 img2 img2 img2"
+        "img3 img3 img3 img4 img4 img4 img4 img4 img5 img5"
+        "img6 img6 img6 img6 img7 img7 img7 img7 img7 img7"
+    ;
+    gap: 10px;
+}
+
+
+/* Choose Us styles */
+.choose-us {
+    margin-top: 50px;
+}
+
+.choose-us-content1 {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.choose-us-content1-des {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.box-title {
+    color: #131318;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 25px;
+}
+
+.box-des{
+    margin-top:16px;
+}
+
+.choose-us-box1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 20px;
+    grid-area: box1;
+}
+
+.choose-us-box2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 20px;
+    grid-area: box2;
+}
+
+.choose-us-box3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    grid-area:box3;
+}
+
+
+
+.choose-us-content2 {
+    display: grid;
+    /* grid-template-columns: repeat(2 , 1fr); */
+    grid-template-areas: "box1 box1 box2 box2" "box3 box3 box3 box3";
+    gap: 15px;
+}
 
 
 /* Responsive style */
@@ -162,7 +303,8 @@ main {
         display: none;
     }
 
-    header , main {
+    header,
+    main {
         margin: 20px 20px;
     }
 
@@ -178,30 +320,62 @@ main {
         height: 1.8rem;
         width: auto;
     }
-    .banner{
+
+    .banner {
         padding: 24px 32px;
     }
-    .banner-form{
+
+    .banner-form {
         flex-direction: column;
         align-items: center;
         padding: 10px 5px;
     }
 
-    .banner-field{
+    .banner-field {
         width: 95%;
     }
+
     .banner-form input {
         padding-left: 5px;
         width: 95%;
     }
+
     .banner-form button {
         width: 99%;
     }
-    .popular-tour{
+
+    .popular-tour {
         flex-direction: column;
     }
 
+    .destination-content2 {
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7"
+        ;
+    }
+
+    .choose-us-box3{
+        width: 90%;
+    }
+
+    .choose-us-content2{
+        grid-template-areas: 
+        "box1 box1"
+        "box2 box2" 
+        "box3 box3";
+    }
+
+    
+
 }
+
+
 
 /* For Tablet */
 @media screen and (min-width:600px) and (max-width:992px) {
