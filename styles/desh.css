@@ -70,7 +70,7 @@ nav li {
 
 /* banner styles */
 .banner {
-    margin-top: 50px;
+    margin-top: 70px;
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
     background-repeat: no-repeat;
@@ -164,7 +164,7 @@ main {
 
 /* Choose Your Destination Styles*/
 .destination {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .destination-content1 {
@@ -243,7 +243,7 @@ main {
 
 /* Choose Us styles */
 .choose-us {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .choose-us-content1 {
@@ -304,7 +304,7 @@ main {
 
 /* Newsletter style */
 .newsletter {
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -372,7 +372,7 @@ main {
 /* Client Review Section */
 
 .client-review{
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .client-review-container{
@@ -401,7 +401,7 @@ main {
 
 /* Footer styles */
 footer{
-    margin-top: 80px;
+    margin-top: 70px;
     text-align: center;
     background: rgba(19, 19, 24, 0.05);
     padding: 80px 160px;
